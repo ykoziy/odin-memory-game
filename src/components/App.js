@@ -1,9 +1,13 @@
-function App() {
+import Game from './Game';
+import Header from './Header';
+
+const App = () => {
   return (
     <div className="App">
-      <p>Hello World!</p>
+      <Header />
+      <Game />
     </div>
   );
-}
+};
 
 export default App;

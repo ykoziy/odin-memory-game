@@ -1,11 +1,12 @@
 import Scoreboard from './Scoreboard';
+import styles from '../style/HeaderScoreboard.module.css';
 
 const Header = () => {
   return (
-    <div>
-      <p>Memory Game Header</p>
+    <header className={styles.head}>
+      <h1>Memory Game Header</h1>
       <Scoreboard />
-    </div>
+    </header>
   );
 };
 

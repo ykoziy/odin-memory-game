@@ -1,11 +1,11 @@
 import CardsContainer from './CardsContainer/CardsContainer';
+import styles from '../style/Game.module.css';
 
 const Game = () => {
   return (
-    <div>
-      <p>game board</p>
+    <main className={styles.game}>
       <CardsContainer />
-    </div>
+    </main>
   );
 };
 

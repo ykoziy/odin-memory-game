@@ -1,5 +1,11 @@
+import './CardsContainer.css';
+
 const Card = () => {
-  return <div>card</div>;
+  return (
+    <div className="card">
+      <h3>Card</h3>
+    </div>
+  );
 };
 
 export default Card;

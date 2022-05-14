@@ -1,11 +1,22 @@
 import Card from './Card';
+import './CardsContainer.css';
 
 const CardsContainer = () => {
   return (
-    <div>
-      <p>cards container</p>
+    <section>
       <Card />
-    </div>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </section>
   );
 };
 

@@ -10,9 +10,30 @@ section {
 
 .card {
   background-color: azure;
-  width: 280px;
-  height: 350px;
+  width: 300px;
+  height: 185px;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.card img {
+  height: auto;
+  width: 300px;
+  z-index: 0;
+}
+
+.card-overlay {
+  background-color: rgba(46, 149, 205, 0.46);
+  color: white;
+  position: relative;
+  z-index: 10;
+  bottom: calc(100% / 8.8);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  margin: 0;
 }

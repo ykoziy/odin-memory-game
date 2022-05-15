@@ -124,7 +124,7 @@ const Game = ({ updateBestScore, increaseCurrentScore, resetScore }) => {
   }, []);
 
   const handleCardClick = (evt) => {
-    const cardId = evt.target.dataset.id;
+    const cardId = evt.currentTarget.dataset.id;
     if (!isAlreadyPicked(cardId)) {
       setCardPicked(cardId);
       increaseCurrentScore();

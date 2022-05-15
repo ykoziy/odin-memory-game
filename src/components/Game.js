@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import CardsContainer from './CardsContainer/CardsContainer';
 import styles from '../style/Game.module.css';
 
-const Game = () => {
+const Game = ({ updateBestScore, increaseCurrentScore, resetScore }) => {
   const gameCards = [
     { id: uniqid(), img: 'img url 1', description: 'Card 1', isPicked: false },
     { id: uniqid(), img: 'img url 2', description: 'Card 2', isPicked: false },
@@ -63,14 +63,32 @@ const Game = () => {
     setCards([...array]);
   };
 
+  const isAlreadyPicked = (id) => {
+    for (let i = 0; i < cards.length; i++) {
+      if (cards[i].id === id) {
+        if (cards[i].isPicked === true) {
+          return true;
+        }
+      }
+    }
+    return false;
+  };
+
   useEffect(() => {
     shuffleCards();
   }, []);
 
   const handleCardClick = (evt) => {
     const cardId = evt.target.dataset.id;
-    setCardPicked(cardId);
-    shuffleCards();
+    if (!isAlreadyPicked(cardId)) {
+      setCardPicked(cardId);
+      increaseCurrentScore();
+      shuffleCards();
+    } else {
+      resetScore();
+      updateBestScore();
+      setCards(gameCards);
+    }
   };
 
   return (

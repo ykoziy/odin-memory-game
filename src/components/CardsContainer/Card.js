@@ -1,9 +1,10 @@
 import './CardsContainer.css';
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div className="card">
-      <h3>Card</h3>
+    <div className="card" onClick={props.handleCardClick} data-id={props.id}>
+      <h3>{props.description}</h3>
+      <img src={props.img} alt="card..." />
     </div>
   );
 };

@@ -1,5 +1,4 @@
 .game {
-  background-color: lightgray;
   padding: 15px;
   height: 100%;
   width: 100%;
@@ -7,4 +6,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  border-left: 2px solid #aac71e;
+  border-right: 2px solid #aac71e;
 }

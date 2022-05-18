@@ -6,6 +6,13 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #171d21;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2,
+h3 {
+  margin: 0;
 }
 
 .App {

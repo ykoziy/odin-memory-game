@@ -20,13 +20,20 @@ const App = () => {
     }
   };
 
+  const restartGame = () => {
+    setBestScore(0);
+    resetScore();
+  };
+
   return (
     <div className="App">
       <Header score={currentScore} bestScore={bestScore} />
       <Game
+        score={currentScore}
         updateBestScore={updateBestScore}
         increaseCurrentScore={increaseCurrentScore}
         resetScore={resetScore}
+        restartGame={restartGame}
       />
     </div>
   );

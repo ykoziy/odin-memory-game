@@ -1,9 +1,16 @@
 import uniqid from 'uniqid';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import CardsContainer from './CardsContainer/CardsContainer';
+import GameEnd from './GameEnd';
 import styles from '../style/Game.module.css';
 
-const Game = ({ updateBestScore, increaseCurrentScore, resetScore }) => {
+const Game = ({
+  score,
+  updateBestScore,
+  increaseCurrentScore,
+  resetScore,
+  restartGame,
+}) => {
   const gameCards = [
     {
       id: uniqid(),
@@ -81,6 +88,8 @@ const Game = ({ updateBestScore, increaseCurrentScore, resetScore }) => {
 
   const [cards, setCards] = useState(gameCards);
 
+  const [isGameRunning, setIsGameRunning] = useState(true);
+
   const shuffleCards = () => {
     let array = [...cards];
     let count = array.length;
@@ -123,11 +132,21 @@ const Game = ({ updateBestScore, increaseCurrentScore, resetScore }) => {
     shuffleCards();
   }, []);
 
+  const gameEnded = () => {
+    if (score === 11) {
+      return true;
+    }
+    return false;
+  };
+
   const handleCardClick = (evt) => {
     const cardId = evt.currentTarget.dataset.id;
     if (!isAlreadyPicked(cardId)) {
       setCardPicked(cardId);
       increaseCurrentScore();
+      if (gameEnded()) {
+        setIsGameRunning(false);
+      }
       shuffleCards();
     } else {
       resetScore();
@@ -136,9 +155,18 @@ const Game = ({ updateBestScore, increaseCurrentScore, resetScore }) => {
     }
   };
 
+  const handleRestartClick = (evt) => {
+    setIsGameRunning(true);
+    restartGame();
+  };
+
   return (
     <main className={styles.game}>
-      <CardsContainer cards={cards} handleCardClick={handleCardClick} />
+      {isGameRunning ? (
+        <CardsContainer cards={cards} handleCardClick={handleCardClick} />
+      ) : (
+        <GameEnd handleRestartClick={handleRestartClick} />
+      )}
     </main>
   );
 };

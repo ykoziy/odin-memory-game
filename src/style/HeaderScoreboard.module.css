@@ -17,12 +17,10 @@
   gap: 25px;
 }
 
+.best-score,
 .score {
-  background-color: antiquewhite;
-}
-
-.best-score {
-  background-color: orange;
+  border: 2px solid #aac71e;
+  color: white;
 }
 
 .score,

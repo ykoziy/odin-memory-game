@@ -43,13 +43,24 @@ section {
   letter-spacing: 1.5px;
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
+  section {
+    grid-template-columns: auto;
+  }
+
   .card {
-    width: 400px;
-    height: 285px;
+    width: 100%;
+    height: auto;
   }
   .card img {
     height: auto;
-    width: 400px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .card-overlay h3 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
   }
 }

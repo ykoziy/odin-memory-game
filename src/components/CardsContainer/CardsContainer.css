@@ -13,6 +13,7 @@ section {
   height: 185px;
   display: grid;
   align-items: end;
+  cursor: pointer;
 }
 
 .card img {

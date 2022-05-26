@@ -22,6 +22,7 @@ section {
   grid-column: 1;
   grid-row: 1;
   z-index: 0;
+  border-radius: 7px;
 }
 
 .card-overlay {
@@ -35,11 +36,16 @@ section {
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 0 0 7px 7px;
 }
 
 .card-overlay h3 {
   font-family: 'Red Hat Display', sans-serif;
   letter-spacing: 1.5px;
+}
+
+.card:hover .card-overlay {
+  background-color: rgba(170, 199, 30, 0.53);
 }
 
 @media only screen and (max-width: 700px) {

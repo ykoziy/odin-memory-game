@@ -22,8 +22,3 @@ const CardsContainer = (props) => {
 };
 
 export default CardsContainer;
-
-// id: uniqid(),
-// img: 'img url 10',
-// description: 'card 10',
-// isPicked: false,

@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/odin-memory-game/static/css/main.a9f89231.css",
-    "main.js": "/odin-memory-game/static/js/main.f5954bdc.js",
+    "main.js": "/odin-memory-game/static/js/main.e29c627b.js",
+    "static/media/2004-ford-gt.jpg": "/odin-memory-game/static/media/2004-ford-gt.495f3971632d21630059.jpg",
     "index.html": "/odin-memory-game/index.html",
     "main.a9f89231.css.map": "/odin-memory-game/static/css/main.a9f89231.css.map",
-    "main.f5954bdc.js.map": "/odin-memory-game/static/js/main.f5954bdc.js.map"
+    "main.e29c627b.js.map": "/odin-memory-game/static/js/main.e29c627b.js.map"
   },
   "entrypoints": [
     "static/css/main.a9f89231.css",
-    "static/js/main.f5954bdc.js"
+    "static/js/main.e29c627b.js"
   ]
 }

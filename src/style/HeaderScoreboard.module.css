@@ -10,6 +10,16 @@
   color: #aac71e;
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo p {
+  font-size: 2rem;
+  color: white;
+}
+
 .scoreboard {
   display: flex;
   flex-direction: column;
@@ -31,5 +41,13 @@
 @media screen and (max-width: 700px) {
   .head {
     flex-direction: column;
+  }
+
+  .logo {
+    align-items: center;
+  }
+
+  .logo p {
+    font-size: 2.5rem;
   }
 }

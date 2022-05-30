@@ -5,7 +5,6 @@ import './CardsContainer.css';
 const CardsContainer = (props) => {
   const getCards = () => {
     return props.cards.map((card) => {
-      console.log(card.img);
       return (
         <Fragment key={card.id}>
           <Card

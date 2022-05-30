@@ -1,14 +1,25 @@
 {
   "files": {
     "main.css": "/odin-memory-game/static/css/main.a9f89231.css",
-    "main.js": "/odin-memory-game/static/js/main.e29c627b.js",
+    "main.js": "/odin-memory-game/static/js/main.4d6654ad.js",
+    "static/media/1994-mclaren-f1.jpg": "/odin-memory-game/static/media/1994-mclaren-f1.e2ceec67a766536320d9.jpg",
+    "static/media/1964-aston-martin-db5.jpg": "/odin-memory-game/static/media/1964-aston-martin-db5.da7b3014e1fce8ee9129.jpg",
+    "static/media/1968-ford-mustang-gt.jpg": "/odin-memory-game/static/media/1968-ford-mustang-gt.30bfeb6b7894da64ff01.jpg",
+    "static/media/1982-DMC-Delorean.jpg": "/odin-memory-game/static/media/1982-DMC-Delorean.909b415a4ffeb281e905.jpg",
+    "static/media/1993-porsche-carrera-993.jpg": "/odin-memory-game/static/media/1993-porsche-carrera-993.a33d48e1d605493157d9.jpg",
+    "static/media/2002-ferrari-enzo-21.jpg": "/odin-memory-game/static/media/2002-ferrari-enzo-21.77d1952879d85c982b84.jpg",
+    "static/media/1976-fiat-131-abarth.jpg": "/odin-memory-game/static/media/1976-fiat-131-abarth.e99fea24aef50fe341bb.jpg",
+    "static/media/1993-lancia-dDelta-integrale-evo-ii-front.jpg": "/odin-memory-game/static/media/1993-lancia-dDelta-integrale-evo-ii-front.165600866121d7fdc049.jpg",
+    "static/media/1985-vw-gti.jpg": "/odin-memory-game/static/media/1985-vw-gti.a5b64796d0859107a7a8.jpg",
+    "static/media/2003-lambo-gallardo.jpg": "/odin-memory-game/static/media/2003-lambo-gallardo.a199ef31decd611cea68.jpg",
+    "static/media/1993-honda-nsx.jpg": "/odin-memory-game/static/media/1993-honda-nsx.2161de75e3d312e8e591.jpg",
     "static/media/2004-ford-gt.jpg": "/odin-memory-game/static/media/2004-ford-gt.495f3971632d21630059.jpg",
     "index.html": "/odin-memory-game/index.html",
     "main.a9f89231.css.map": "/odin-memory-game/static/css/main.a9f89231.css.map",
-    "main.e29c627b.js.map": "/odin-memory-game/static/js/main.e29c627b.js.map"
+    "main.4d6654ad.js.map": "/odin-memory-game/static/js/main.4d6654ad.js.map"
   },
   "entrypoints": [
     "static/css/main.a9f89231.css",
-    "static/js/main.e29c627b.js"
+    "static/js/main.4d6654ad.js"
   ]
 }

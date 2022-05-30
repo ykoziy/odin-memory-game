@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/odin-memory-game/static/css/main.a9f89231.css",
-    "main.js": "/odin-memory-game/static/js/main.4d6654ad.js",
+    "main.js": "/odin-memory-game/static/js/main.ec5f819a.js",
     "static/media/1994-mclaren-f1.jpg": "/odin-memory-game/static/media/1994-mclaren-f1.e2ceec67a766536320d9.jpg",
     "static/media/1964-aston-martin-db5.jpg": "/odin-memory-game/static/media/1964-aston-martin-db5.da7b3014e1fce8ee9129.jpg",
     "static/media/1968-ford-mustang-gt.jpg": "/odin-memory-game/static/media/1968-ford-mustang-gt.30bfeb6b7894da64ff01.jpg",
@@ -16,10 +16,10 @@
     "static/media/2004-ford-gt.jpg": "/odin-memory-game/static/media/2004-ford-gt.495f3971632d21630059.jpg",
     "index.html": "/odin-memory-game/index.html",
     "main.a9f89231.css.map": "/odin-memory-game/static/css/main.a9f89231.css.map",
-    "main.4d6654ad.js.map": "/odin-memory-game/static/js/main.4d6654ad.js.map"
+    "main.ec5f819a.js.map": "/odin-memory-game/static/js/main.ec5f819a.js.map"
   },
   "entrypoints": [
     "static/css/main.a9f89231.css",
-    "static/js/main.4d6654ad.js"
+    "static/js/main.ec5f819a.js"
   ]
 }
